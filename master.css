@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(#200016,#10001f);
+    font-family: sans-serif;
+    height: 100vh;
+}
+header{
+    position: absolute;
+    width: 95%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+header .logo{
+    font-size:30px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    margin-right: 30px;
+}
+header ul li a{
+    padding: 14px;
+    border-radius: 30px;
+}
+
+header ul li a:hover,.active{
+    background-color:#fff;
+    color: #10001f;
+}
+/* End Header */
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.main img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+#moon{
+    mix-blend-mode: screen;
+    transform: translateY(50px);
+}
+.main .scrol{
+    font-size: 25px;
+    color: #fff;
+    transform: translateY(-140px);
+}
+.main::after{
+    content: "";
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to top,#200016 , transparent);
+}
+/* End Section */
+.contetnt{
+    padding: 30px;
+}
+.contetnt h2{
+    color: #fff;
+    font-size: 30px;
+    margin: 30px;
+}
+.contetnt p{
+    color: #fff;
+    margin: 30px;
+    line-height: 1.8;
+}
